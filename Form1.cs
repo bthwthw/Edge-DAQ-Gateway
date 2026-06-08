@@ -214,8 +214,12 @@
                         int rawTemp = (rawData[2] << 8) | rawData[3];
 
                         float volt = (float)((rawPot / 4095.0) * 3.3);
-                        float vSense = (float)((rawTemp / 4095.0) * 3.3);
-                        float temp = (vSense - 0.76f) / 0.0025f + 25.0f;
+
+                        float V = (float)((rawTemp / 4095.0) * 3.3);
+                        float a = 8.69365944f;
+                        float b = 2.69886364f;
+                        float c = -0.35625284f;
+                        float temp = a * (V * V) + b * V + c;
 
                         // nếu đang ghi thì đưa vào hàng đợi 
                         if (isLogging)
@@ -339,8 +343,12 @@
                         int rawTemp = (rawData[2] << 8) | rawData[3];
 
                         float volt = (float)((rawPot / 4095.0) * 3.3);
-                        float vSense = (float)((rawTemp / 4095.0) * 3.3);
-                        float temp = (vSense - 0.76f) / 0.0025f + 25.0f;
+                        
+                        float V = (float)((rawTemp / 4095.0) * 3.3);
+                        float a = 8.69365944f;
+                        float b = 2.69886364f;
+                        float c = -0.35625284f;
+                        float temp = a * (V * V) + b * V + c;
 
                         if (isLogging)
                         {
