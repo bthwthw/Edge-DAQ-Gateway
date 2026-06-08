@@ -150,7 +150,7 @@
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.07692F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.92308F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel7.Controls.Add(this.btn_browser, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.txt_path, 1, 0);
@@ -166,9 +166,9 @@
             // 
             this.btn_browser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_browser.Font = new System.Drawing.Font("Segoe UI Semibold", 13F);
-            this.btn_browser.Location = new System.Drawing.Point(385, 3);
+            this.btn_browser.Location = new System.Drawing.Point(384, 3);
             this.btn_browser.Name = "btn_browser";
-            this.btn_browser.Size = new System.Drawing.Size(59, 44);
+            this.btn_browser.Size = new System.Drawing.Size(60, 44);
             this.btn_browser.TabIndex = 5;
             this.btn_browser.Text = "...";
             this.btn_browser.UseVisualStyleBackColor = true;
@@ -192,7 +192,7 @@
             this.txt_path.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_path.Location = new System.Drawing.Point(129, 7);
             this.txt_path.Name = "txt_path";
-            this.txt_path.Size = new System.Drawing.Size(250, 36);
+            this.txt_path.Size = new System.Drawing.Size(249, 36);
             this.txt_path.TabIndex = 4;
             // 
             // beautifulGroupBox2
@@ -236,7 +236,7 @@
             this.txt_port.Name = "txt_port";
             this.txt_port.Size = new System.Drawing.Size(164, 33);
             this.txt_port.TabIndex = 11;
-            this.txt_port.Text = "5710";
+            this.txt_port.Text = "5005";
             this.txt_port.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
