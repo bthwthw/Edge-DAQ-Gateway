@@ -143,13 +143,14 @@
             this.btn_csv.TabIndex = 1;
             this.btn_csv.Text = "Bắt đầu ghi dữ liệu";
             this.btn_csv.UseVisualStyleBackColor = false;
+            this.btn_csv.Click += new System.EventHandler(this.btn_csv_Click);
             // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.07692F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.92308F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.tableLayoutPanel7.Controls.Add(this.btn_browser, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.txt_path, 1, 0);
@@ -165,12 +166,13 @@
             // 
             this.btn_browser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_browser.Font = new System.Drawing.Font("Segoe UI Semibold", 13F);
-            this.btn_browser.Location = new System.Drawing.Point(391, 3);
+            this.btn_browser.Location = new System.Drawing.Point(386, 3);
             this.btn_browser.Name = "btn_browser";
-            this.btn_browser.Size = new System.Drawing.Size(53, 44);
+            this.btn_browser.Size = new System.Drawing.Size(58, 44);
             this.btn_browser.TabIndex = 5;
             this.btn_browser.Text = "...";
             this.btn_browser.UseVisualStyleBackColor = true;
+            this.btn_browser.Click += new System.EventHandler(this.btn_browser_Click);
             // 
             // label6
             // 
@@ -179,7 +181,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 50);
+            this.label6.Size = new System.Drawing.Size(121, 50);
             this.label6.TabIndex = 3;
             this.label6.Text = "File path: ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -188,9 +190,9 @@
             // 
             this.txt_path.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_path.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_path.Location = new System.Drawing.Point(131, 7);
+            this.txt_path.Location = new System.Drawing.Point(130, 7);
             this.txt_path.Name = "txt_path";
-            this.txt_path.Size = new System.Drawing.Size(254, 36);
+            this.txt_path.Size = new System.Drawing.Size(250, 36);
             this.txt_path.TabIndex = 4;
             // 
             // beautifulGroupBox2
@@ -340,10 +342,10 @@
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 15F);
-            this.label10.Location = new System.Drawing.Point(3, 34);
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 25F);
+            this.label10.Location = new System.Drawing.Point(3, 23);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(447, 35);
+            this.label10.Size = new System.Drawing.Size(447, 57);
             this.label10.TabIndex = 11;
             this.label10.Text = "NHIỆT ĐỘ";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -406,10 +408,10 @@
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 15F);
-            this.label7.Location = new System.Drawing.Point(3, 34);
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 25F);
+            this.label7.Location = new System.Drawing.Point(3, 23);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(447, 35);
+            this.label7.Size = new System.Drawing.Size(447, 57);
             this.label7.TabIndex = 11;
             this.label7.Text = "ĐIỆN ÁP BIẾN TRỞ";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -511,6 +513,7 @@
             this.lb_status.TabIndex = 7;
             this.lb_status.Text = "Trạng thái kết nối: ";
             this.lb_status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_status.DoubleClick += new System.EventHandler(this.lb_status_DoubleClick);
             // 
             // label2
             // 
@@ -561,6 +564,7 @@
             this.btn_disconnect.TabIndex = 1;
             this.btn_disconnect.Text = "Ngắt kết nối";
             this.btn_disconnect.UseVisualStyleBackColor = true;
+            this.btn_disconnect.Click += new System.EventHandler(this.btn_disconnect_Click);
             // 
             // btn_connect
             // 
@@ -572,6 +576,7 @@
             this.btn_connect.TabIndex = 0;
             this.btn_connect.Text = "Kết nối";
             this.btn_connect.UseVisualStyleBackColor = true;
+            this.btn_connect.Click += new System.EventHandler(this.btn_connect_Click);
             // 
             // txt_ven
             // 
