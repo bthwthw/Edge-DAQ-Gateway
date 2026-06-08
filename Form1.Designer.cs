@@ -150,7 +150,7 @@
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.07692F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.92308F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel7.Controls.Add(this.btn_browser, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.txt_path, 1, 0);
@@ -166,9 +166,9 @@
             // 
             this.btn_browser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_browser.Font = new System.Drawing.Font("Segoe UI Semibold", 13F);
-            this.btn_browser.Location = new System.Drawing.Point(386, 3);
+            this.btn_browser.Location = new System.Drawing.Point(385, 3);
             this.btn_browser.Name = "btn_browser";
-            this.btn_browser.Size = new System.Drawing.Size(58, 44);
+            this.btn_browser.Size = new System.Drawing.Size(59, 44);
             this.btn_browser.TabIndex = 5;
             this.btn_browser.Text = "...";
             this.btn_browser.UseVisualStyleBackColor = true;
@@ -181,7 +181,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(121, 50);
+            this.label6.Size = new System.Drawing.Size(120, 50);
             this.label6.TabIndex = 3;
             this.label6.Text = "File path: ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -190,7 +190,7 @@
             // 
             this.txt_path.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_path.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_path.Location = new System.Drawing.Point(130, 7);
+            this.txt_path.Location = new System.Drawing.Point(129, 7);
             this.txt_path.Name = "txt_path";
             this.txt_path.Size = new System.Drawing.Size(250, 36);
             this.txt_path.TabIndex = 4;
@@ -598,6 +598,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.beautifulGroupBox3.ResumeLayout(false);
