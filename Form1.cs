@@ -219,14 +219,9 @@ namespace DLMT_BTL
                     float a = 8.69365944f;
                     float b = 2.69886364f;
                     float c = -0.35625284f;
-                    // 1. Tính ra nhiệt độ thô (chưa Calib)
                     float tempRaw = a * (V * V) + b * V + c;
-
-                    // 2. HIỆU CHUẨN TOÀN DẢI (CALIBRATION)
-                    float gain = 0.98039f;      // Hệ số bù trôi độ nhạy
-                    float offset = -1.17647f;   // Hệ số bù trôi Zero
-
-                    // 3. Nhiệt độ cuối cùng chuẩn xác tuyệt đối (Gán lại vào biến temp)
+                    float gain = 0.98039f;      
+                    float offset = -1.17647f;   
                     float temp = (tempRaw * gain) + offset;
 
                     // nếu đang ghi thì đưa vào hàng đợi 
